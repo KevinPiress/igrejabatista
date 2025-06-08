@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Igreja Batista | Bem-vindo</title>
+  <title>Contato | Igreja Batista</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -15,11 +15,11 @@
       </a>
       <nav role="navigation" aria-label="Menu principal">
         <ul>
-          <li><a href="index.html" class="ativo">Início</a></li>
+          <li><a href="index.html">Início</a></li>
           <li><a href="sobre.html">Sobre Nós</a></li>
           <li><a href="ministerios.html">Ministérios</a></li>
           <li><a href="eventos.html">Eventos</a></li>
-          <li><a href="contato.html">Contato</a></li>
+          <li><a href="contato.html" class="ativo">Contato</a></li>
           <li>
             <button class="btn-theme-toggle" id="theme-toggle" aria-label="Alternar modo claro e escuro" title="Alternar modo claro e escuro">🌙</button>
           </li>
@@ -28,11 +28,22 @@
     </div>
   </header>
 
-  <main id="home" tabindex="-1">
-    <section class="hero" role="region" aria-label="Mensagem de boas-vindas">
-      <h1>Igreja Batista Memorial</h1>
-      <p>Um lugar de fé, comunhão e crescimento espiritual. Junte-se a nós para celebrar e aprender juntos.</p>
-      <a href="contato.html" class="btn-primary" role="button">Venha nos visitar</a>
+  <main>
+    <section id="contact" role="region" aria-labelledby="contact-title">
+      <h2 id="contact-title" class="section-title">Contato</h2>
+      <form id="contact-form" novalidate aria-describedby="form-message">
+        <label for="name">Nome</label>
+        <input type="text" id="name" name="name" required aria-required="true" minlength="2" placeholder="Seu nome" />
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required aria-required="true" placeholder="seu@email.com" />
+
+        <label for="message">Mensagem</label>
+        <textarea id="message" name="message" required aria-required="true" minlength="5" placeholder="Sua mensagem"></textarea>
+
+        <button type="submit" class="btn-submit" aria-label="Enviar mensagem">Enviar</button>
+        <p id="form-message" role="alert" style="margin-top:1rem;color:crimson;font-weight:600;display:none;"></p>
+      </form>
     </section>
   </main>
 

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Igreja Batista | Bem-vindo</title>
+  <title>Ministérios | Igreja Batista</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -15,9 +15,9 @@
       </a>
       <nav role="navigation" aria-label="Menu principal">
         <ul>
-          <li><a href="index.html" class="ativo">Início</a></li>
+          <li><a href="index.html">Início</a></li>
           <li><a href="sobre.html">Sobre Nós</a></li>
-          <li><a href="ministerios.html">Ministérios</a></li>
+          <li><a href="ministérios.html" class="ativo">Ministérios</a></li>
           <li><a href="eventos.html">Eventos</a></li>
           <li><a href="contato.html">Contato</a></li>
           <li>
@@ -28,11 +28,23 @@
     </div>
   </header>
 
-  <main id="home" tabindex="-1">
-    <section class="hero" role="region" aria-label="Mensagem de boas-vindas">
-      <h1>Igreja Batista Memorial</h1>
-      <p>Um lugar de fé, comunhão e crescimento espiritual. Junte-se a nós para celebrar e aprender juntos.</p>
-      <a href="contato.html" class="btn-primary" role="button">Venha nos visitar</a>
+  <main>
+    <section id="ministries" role="region" aria-labelledby="ministries-title">
+      <h2 id="ministries-title" class="section-title">Ministérios</h2>
+      <div class="card-grid">
+        <article tabindex="0" class="card" aria-label="Ministério de Jovens">
+          <h3>Ministério de Jovens</h3>
+          <p>Espaço para os jovens crescerem na fé, com encontros semanais e atividades especiais.</p>
+        </article>
+        <article tabindex="0" class="card" aria-label="Ministério de Louvor">
+          <h3>Ministério de Louvor</h3>
+          <p>Guia nosso culto com música e adoração, elevando nossos corações a Deus.</p>
+        </article>
+        <article tabindex="0" class="card" aria-label="Ministério de Ação Social">
+          <h3>Ministério de Ação Social</h3>
+          <p>Projeto de ajuda comunitária, oferecendo suporte aos necessitados através do amor cristão.</p>
+        </article>
+      </div>
     </section>
   </main>
 
