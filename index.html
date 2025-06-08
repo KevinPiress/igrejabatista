@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Igreja Batista | Bem-vindo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header role="banner">
+    <div class="container">
+      <div class="logo" tabindex="0" aria-label="Logo Igreja Batista Evangélica">Igreja Batista</div>
+      <nav role="navigation" aria-label="Menu principal">
+        <ul>
+          <li><a href="#home" tabindex="0">Início</a></li>
+          <li><a href="#about" tabindex="0">Sobre Nós</a></li>
+          <li><a href="#ministries" tabindex="0">Ministérios</a></li>
+          <li><a href="#events" tabindex="0">Eventos</a></li>
+          <li><a href="#contact" tabindex="0">Contato</a></li>
+          <li>
+            <button class="btn-theme-toggle" id="theme-toggle" aria-label="Alternar modo claro e escuro" title="Alternar modo claro e escuro" tabindex="0">🌙</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home" tabindex="-1">
+    <section class="hero" role="region" aria-label="Mensagem de boas-vindas">
+      <h1>Igreja Batista Memorial</h1>
+      <p>Um lugar de fé, comunhão e crescimento espiritual. Junte-se a nós para celebrar e aprender juntos.</p>
+      <a href="#contact" class="btn-primary" role="button" tabindex="0">Venha nos visitar</a>
+    </section>
+
+    <section id="about" role="region" aria-labelledby="about-title">
+      <h2 id="about-title" class="section-title">Sobre Nós</h2>
+      <p>
+        Fundada com o propósito de pregar o evangelho de Jesus Cristo, nossa Igreja Batista é uma comunidade vibrante e acolhedora. Acreditamos no amor, na fé e no serviço ao próximo como fundamentos de nossa caminhada.
+      </p>
+    </section>
+
+    <section id="ministries" role="region" aria-labelledby="ministries-title">
+      <h2 id="ministries-title" class="section-title">Ministérios</h2>
+      <div class="card-grid">
+        <article tabindex="0" class="card" aria-label="Ministério Infantil">
+          <h3>Ministério Infantil</h3>
+          <p>Atividades pedagógicas e espirituais para crianças, estimulando o amor a Deus desde cedo.</p>
+        </article>
+        <article tabindex="0" class="card" aria-label="Ministério de Jovens">
+          <h3>Ministério de Jovens</h3>
+          <p>Espaço para os jovens crescerem na fé, com encontros semanais e atividades especiais.</p>
+        </article>
+        <article tabindex="0" class="card" aria-label="Ministério de Louvor">
+          <h3>Ministério de Louvor</h3>
+          <p>Guia nosso culto com música e adoração, elevando nossos corações a Deus.</p>
+        </article>
+        <article tabindex="0" class="card" aria-label="Ministério de Ação Social">
+          <h3>Ministério de Ação Social</h3>
+          <p>Projeto de ajuda comunitária, oferecendo suporte aos necessitados através do amor cristão.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="events" role="region" aria-labelledby="events-title">
+      <h2 id="events-title" class="section-title">Eventos</h2>
+      <div class="card-grid">
+        <article tabindex="0" class="card" aria-label="Culto Dominical">
+          <h3>Culto Dominical</h3>
+          <p>Todos os domingos às 10h00 - Venha adorar e aprender conosco.</p>
+        </article>
+        <article tabindex="0" class="card" aria-label="Estudo Bíblico">
+          <h3>Estudo Bíblico</h3>
+          <p>Quartas-feiras às 19h30 - Aprofunde seus conhecimentos da Bíblia em nossa igreja.</p>
+        </article>
+        <article tabindex="0" class="card" aria-label="Encontro de Jovens">
+          <h3>Encontro de Jovens</h3>
+          <p>Sextas-feiras às 20h00 - Momentos de comunhão e diversão para os jovens.</p>
+        </article>
+        <article tabindex="0" class="card" aria-label="Ação Social Mensal">
+          <h3>Ação Social Mensal</h3>
+          <p>Último sábado do mês - Participe das ações e ajude a transformar vidas.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" role="region" aria-labelledby="contact-title">
+      <h2 id="contact-title" class="section-title">Contato</h2>
+      <form id="contact-form" novalidate aria-describedby="form-message">
+        <label for="name">Nome</label>
+        <input type="text" id="name" name="name" required aria-required="true" minlength="2" placeholder="Seu nome" />
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required aria-required="true" placeholder="seu@email.com" />
+
+        <label for="message">Mensagem</label>
+        <textarea id="message" name="message" required aria-required="true" minlength="5" placeholder="Sua mensagem"></textarea>
+
+        <button type="submit" class="btn-submit" aria-label="Enviar mensagem">Enviar</button>
+        <p id="form-message" role="alert" style="margin-top:1rem;color:crimson;font-weight:600;display:none;"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>© 2024 Igreja Batista Evangélica - Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
